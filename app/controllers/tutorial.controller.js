@@ -20,7 +20,8 @@ exports.create = (req, res) => {
   tutorial
     .save(tutorial)
     .then(data => {
-      res.send(data);
+      res.send("Successfully posted");
+      //res.send(data);
     })
     .catch(err => {
       res.status(500).send({
